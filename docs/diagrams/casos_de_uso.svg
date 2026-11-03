@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="100%" height="100%" style="background-color:#0b1329; font-family:'Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="gradCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c38"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+    <linearGradient id="gradUseCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <text x="500" y="42" text-anchor="middle" fill="#10b981" font-size="22" font-weight="bold" letter-spacing="1">DIAGRAMA DE CASOS DE USO - SISTEMA DE ALUGUEL DE CARROS</text>
+  <text x="500" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">LAB 02 - DIAW | PUC Minas | Autor: Cairo Rodrigues Rezende (914495)</text>
+
+  <!-- Sistema Boundary -->
+  <rect x="250" y="90" width="500" height="605" rx="16" fill="url(#gradCard)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="250" y="90" width="500" height="38" rx="16" fill="#10b981" fill-opacity="0.15"/>
+  <text x="500" y="115" text-anchor="middle" fill="#34d399" font-size="14" font-weight="bold" letter-spacing="1.5">SISTEMA AUTO-RENT (SPRING BOOT &amp; REACT)</text>
+
+  <!-- Ator Cliente -->
+  <g transform="translate(70, 270)">
+    <circle cx="50" cy="40" r="22" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="50" y1="62" x2="50" y2="115" stroke="#38bdf8" stroke-width="3"/>
+    <line x1="15" y1="85" x2="85" y2="85" stroke="#38bdf8" stroke-width="3"/>
+    <line x1="50" y1="115" x2="20" y2="160" stroke="#38bdf8" stroke-width="3"/>
+    <line x1="50" y1="115" x2="80" y2="160" stroke="#38bdf8" stroke-width="3"/>
+    <text x="50" y="190" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="bold">Cliente</text>
+    <text x="50" y="208" text-anchor="middle" fill="#94a3b8" font-size="12">(Usuário Individual)</text>
+  </g>
+
+  <!-- Ator Agente -->
+  <g transform="translate(830, 270)">
+    <circle cx="50" cy="40" r="22" fill="#d97706" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="50" y1="62" x2="50" y2="115" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="15" y1="85" x2="85" y2="85" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="50" y1="115" x2="20" y2="160" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="50" y1="115" x2="80" y2="160" stroke="#fbbf24" stroke-width="3"/>
+    <text x="50" y="190" text-anchor="middle" fill="#f8fafc" font-size="15" font-weight="bold">Agente</text>
+    <text x="50" y="208" text-anchor="middle" fill="#94a3b8" font-size="12">(Empresa / Banco)</text>
+  </g>
+
+  <!-- Use Cases -->
+  <g transform="translate(340, 145)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC01: Autenticar no Sistema (Login/Senha)</text>
+  </g>
+
+  <g transform="translate(340, 215)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC02: Manter Dados do Cliente (CRUD)</text>
+  </g>
+
+  <g transform="translate(340, 285)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC03: Introduzir Pedido de Aluguel</text>
+  </g>
+
+  <g transform="translate(340, 355)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC04: Modificar / Cancelar Pedido</text>
+  </g>
+
+  <g transform="translate(340, 425)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC05: Avaliar Pedido Financeiramente</text>
+  </g>
+
+  <g transform="translate(340, 495)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC06: Executar / Formalizar Contrato</text>
+  </g>
+
+  <g transform="translate(340, 565)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC07: Conceder / Vincular Contrato Crédito</text>
+  </g>
+
+  <g transform="translate(340, 635)">
+    <ellipse cx="160" cy="24" rx="145" ry="22" fill="url(#gradUseCase)" stroke="#34d399" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="160" y="29" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">UC08: Gerenciar Frota e Propriedade</text>
+  </g>
+
+  <!-- Linhas Cliente -->
+  <line x1="160" y1="330" x2="345" y2="169" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <line x1="160" y1="340" x2="345" y2="239" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="160" y1="350" x2="345" y2="309" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="160" y1="360" x2="345" y2="379" stroke="#38bdf8" stroke-width="1.8"/>
+
+  <!-- Linhas Agente -->
+  <line x1="840" y1="330" x2="655" y2="169" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <line x1="840" y1="350" x2="655" y2="379" stroke="#fbbf24" stroke-width="1.8"/>
+  <line x1="840" y1="360" x2="655" y2="449" stroke="#fbbf24" stroke-width="1.8"/>
+  <line x1="840" y1="370" x2="655" y2="519" stroke="#fbbf24" stroke-width="1.8"/>
+  <line x1="840" y1="380" x2="655" y2="589" stroke="#fbbf24" stroke-width="1.8"/>
+  <line x1="840" y1="390" x2="655" y2="659" stroke="#fbbf24" stroke-width="1.8"/>
+</svg>

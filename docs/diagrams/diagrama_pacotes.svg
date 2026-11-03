@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="100%" height="100%" style="background-color:#0b1329; font-family:'Segoe UI',sans-serif;">
+  <defs>
+    <filter id="pkgShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <text x="500" y="42" text-anchor="middle" fill="#10b981" font-size="22" font-weight="bold">DIAGRAMA DE PACOTES - VISÃO LÓGICA (ARQUITETURA MVC)</text>
+  <text x="500" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Subsistemas: Gestão de Pedidos/Contratos (Back-end) e Construção Dinâmica Web (Front-end)</text>
+
+  <!-- FRONT-END CLIENT -->
+  <g transform="translate(50, 100)" filter="url(#pkgShadow)">
+    <path d="M 0 18 L 0 0 L 120 0 L 135 18 L 400 18 L 400 240 L 0 240 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="20" y="14" fill="#38bdf8" font-size="12" font-weight="bold">frontend (React + Vite)</text>
+    
+    <rect x="20" y="40" width="165" height="45" rx="6" fill="#0369a1"/>
+    <text x="102" y="68" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">components &amp; UI</text>
+
+    <rect x="215" y="40" width="165" height="45" rx="6" fill="#0369a1"/>
+    <text x="297" y="68" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">pages (Views)</text>
+
+    <rect x="20" y="105" width="165" height="45" rx="6" fill="#075985"/>
+    <text x="102" y="133" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">services (Axios API)</text>
+
+    <rect x="215" y="105" width="165" height="45" rx="6" fill="#075985"/>
+    <text x="297" y="133" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">context (AuthContext)</text>
+
+    <rect x="20" y="170" width="360" height="45" rx="6" fill="#0c4a6e"/>
+    <text x="200" y="198" text-anchor="middle" fill="#7dd3fc" font-size="12" font-weight="600">Subsistema: Construção Dinâmica de Páginas Web</text>
+  </g>
+
+  <!-- BACK-END SPRING BOOT -->
+  <g transform="translate(520, 100)" filter="url(#pkgShadow)">
+    <path d="M 0 18 L 0 0 L 150 0 L 165 18 L 430 18 L 430 520 L 0 520 Z" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="20" y="14" fill="#10b981" font-size="12" font-weight="bold">backend.autorent (Spring Boot)</text>
+
+    <!-- Pacote Controller -->
+    <rect x="25" y="40" width="380" height="70" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="40" y="62" fill="#6ee7b7" font-size="13" font-weight="bold">📦 com.autorent.controller (REST API)</text>
+    <text x="40" y="82" fill="#cbd5e1" font-size="11">AuthController, ClienteController, AutomovelController, PedidoController</text>
+
+    <!-- Pacote Service -->
+    <rect x="25" y="130" width="380" height="70" rx="8" fill="#065f46" stroke="#34d399" stroke-width="1.5"/>
+    <text x="40" y="152" fill="#6ee7b7" font-size="13" font-weight="bold">📦 com.autorent.service (Regras de Negócio)</text>
+    <text x="40" y="172" fill="#cbd5e1" font-size="11">AvaliacaoFinanceiraService, ContratoCreditoService, ClienteService</text>
+
+    <!-- Pacote Repository -->
+    <rect x="25" y="220" width="380" height="70" rx="8" fill="#047857" stroke="#34d399" stroke-width="1.5"/>
+    <text x="40" y="242" fill="#6ee7b7" font-size="13" font-weight="bold">📦 com.autorent.repository (Spring Data JPA)</text>
+    <text x="40" y="262" fill="#cbd5e1" font-size="11">ClienteRepository, AutomovelRepository, PedidoAluguelRepository</text>
+
+    <!-- Pacote Model / Domain -->
+    <rect x="25" y="310" width="380" height="70" rx="8" fill="#059669" stroke="#34d399" stroke-width="1.5"/>
+    <text x="40" y="332" fill="#6ee7b7" font-size="13" font-weight="bold">📦 com.autorent.model (Entidades de Domínio)</text>
+    <text x="40" y="352" fill="#cbd5e1" font-size="11">Usuario, Cliente, Rendimento, Automovel, PedidoAluguel, ContratoCredito</text>
+
+    <!-- Pacote Security & Config -->
+    <rect x="25" y="400" width="380" height="65" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#34d399" stroke-width="1.5"/>
+    <text x="40" y="422" fill="#6ee7b7" font-size="13" font-weight="bold">📦 com.autorent.config &amp; security</text>
+    <text x="40" y="442" fill="#cbd5e1" font-size="11">SecurityConfig (BCrypt, Session/JWT), CorsConfig, SupabaseConfig</text>
+  </g>
+
+  <!-- BANCO DE DADOS SUPABASE -->
+  <g transform="translate(50, 420)" filter="url(#pkgShadow)">
+    <path d="M 0 18 L 0 0 L 150 0 L 165 18 L 400 18 L 400 200 L 0 200 Z" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="20" y="14" fill="#22c55e" font-size="12" font-weight="bold">database (Supabase PostgreSQL)</text>
+
+    <rect x="30" y="45" width="340" height="130" rx="8" fill="#14532d"/>
+    <text x="50" y="75" fill="#86efac" font-size="13" font-weight="bold">🐘 PostgreSQL Cloud Engine</text>
+    <text x="50" y="100" fill="#cbd5e1" font-size="11">• Tabelas relacionais com integridade referencial</text>
+    <text x="50" y="120" fill="#cbd5e1" font-size="11">• Migrações e Schemas com suporte a fallback local</text>
+    <text x="50" y="140" fill="#cbd5e1" font-size="11">• Pool de conexões HikariCP via Spring Boot</text>
+  </g>
+
+  <!-- CONEXÕES ENTRE CAMADAS -->
+  <line x1="450" y1="220" x2="520" y2="220" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="485" y="210" text-anchor="middle" fill="#38bdf8" font-size="11">HTTPS/REST</text>
+
+  <line x1="710" y1="110" x2="710" y2="130" stroke="#10b981" stroke-width="2"/>
+  <line x1="710" y1="200" x2="710" y2="220" stroke="#10b981" stroke-width="2"/>
+  <line x1="710" y1="290" x2="710" y2="310" stroke="#10b981" stroke-width="2"/>
+
+  <line x1="520" y1="490" x2="450" y2="490" stroke="#22c55e" stroke-width="2"/>
+  <text x="485" y="480" text-anchor="middle" fill="#22c55e" font-size="11">JDBC/SQL</text>
+</svg>

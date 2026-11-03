@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%" style="background-color:#0b1329; font-family:'Segoe UI',sans-serif;">
+  <defs>
+    <filter id="cardSh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <text x="500" y="40" text-anchor="middle" fill="#10b981" font-size="22" font-weight="bold">HISTÓRIAS DE USUÁRIO (USER STORIES) - LABORATÓRIO 02</text>
+  <text x="500" y="65" text-anchor="middle" fill="#94a3b8" font-size="13">Especificação Ágil de Requisitos Funcionais | Aluno: Cairo Rodrigues Rezende</text>
+
+  <!-- US 01 -->
+  <g transform="translate(50, 95)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#0284c7"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US01 - Autenticação e Acesso ao Sistema</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Usuário (Cliente ou Agente)</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Fazer login com usuário e senha com segurança</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Acessar as funcionalidades restritas do sistema de aluguel</text>
+    <text x="15" y="108" fill="#38bdf8" font-size="10"><b>Critério:</b> Acesso restrito a usuários cadastrados; senhas criptografadas.</text>
+  </g>
+
+  <!-- US 02 -->
+  <g transform="translate(530, 95)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#059669"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US02 - Cadastro Completo de Cliente (CRUD)</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Cliente Individual</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Cadastrar e gerenciar meus dados pessoais e profissionais</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Atender às exigências cadastrais para poder locar veículos</text>
+    <text x="15" y="108" fill="#34d399" font-size="10"><b>Critério:</b> RG, CPF, Nome, Endereço, Profissão e até 3 empregadores com renda.</text>
+  </g>
+
+  <!-- US 03 -->
+  <g transform="translate(50, 245)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#0284c7"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US03 - Introduzir Pedido de Aluguel</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Cliente autenticado</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Escolher um automóvel e registrar um pedido de aluguel</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Iniciar o processo de locação e análise financeira</text>
+    <text x="15" y="108" fill="#38bdf8" font-size="10"><b>Critério:</b> Seleção de datas, cálculo do valor e opção de crédito associado.</text>
+  </g>
+
+  <!-- US 04 -->
+  <g transform="translate(530, 245)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#059669"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US04 - Modificar ou Cancelar Pedidos</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Cliente solicitante</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Alterar datas ou cancelar pedidos que ainda não foram executados</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Ter flexibilidade caso meus planos mudem</text>
+    <text x="15" y="108" fill="#34d399" font-size="10"><b>Critério:</b> Cancelamento permitido enquanto em análise ou antes do contrato.</text>
+  </g>
+
+  <!-- US 05 -->
+  <g transform="translate(50, 395)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#d97706"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US05 - Avaliação Financeira por Agentes</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Agente (Empresa ou Banco)</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Analisar financeiramente os pedidos e rendimentos dos clientes</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Emitir parecer positivo/negativo e autorizar a execução do contrato</text>
+    <text x="15" y="108" fill="#fbbf24" font-size="10"><b>Critério:</b> Registro do parecer com justificativa e status atualizado.</text>
+  </g>
+
+  <!-- US 06 -->
+  <g transform="translate(530, 395)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#db2777"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US06 - Contrato de Crédito por Bancos Agentes</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Banco Agente</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Conceder e associar contratos de crédito ao aluguel de automóvel</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Viabilizar o financiamento e pagamento do contrato</text>
+    <text x="15" y="108" fill="#f472b6" font-size="10"><b>Critério:</b> Cálculo de parcelas, juros e associação com o pedido de aluguel.</text>
+  </g>
+
+  <!-- US 07 -->
+  <g transform="translate(290, 545)" filter="url(#cardSh)">
+    <rect width="420" height="125" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="420" height="28" rx="10" fill="#7c3aed"/>
+    <text x="15" y="19" fill="#ffffff" font-size="12" font-weight="bold">US07 - Registro e Propriedade de Automóveis</text>
+    <text x="15" y="52" fill="#e2e8f0" font-size="11"><b>Como:</b> Administrador / Agente do Sistema</text>
+    <text x="15" y="70" fill="#e2e8f0" font-size="11"><b>Quero:</b> Cadastrar automóveis registrando matrícula, ano, marca, modelo e placa</text>
+    <text x="15" y="88" fill="#e2e8f0" font-size="11"><b>Para:</b> Manter a frota atualizada e vincular a propriedade (Cliente, Empresa, Banco)</text>
+    <text x="15" y="108" fill="#a78bfa" font-size="10"><b>Critério:</b> Identificação clara do tipo e nome do proprietário.</text>
+  </g>
+</svg>
